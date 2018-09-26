@@ -19,3 +19,4 @@ RUN apk add python
 RUN wget  https://bootstrap.pypa.io/get-pip.py
 RUN python get-pip.py
 RUN pip install s3cmd
+RUN pip install awscli
