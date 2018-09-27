@@ -1,4 +1,6 @@
 FROM docker:stable-git
+ADD mime.types /etc/mime.types
+ADD mime.types ~/mime.types
 RUN echo "ipv6" >> /etc/modules
 RUN echo "http://dl-1.alpinelinux.org/alpine/edge/main" >> /etc/apk/repositories;
 RUN echo "http://dl-2.alpinelinux.org/alpine/edge/main" >> /etc/apk/repositories;
