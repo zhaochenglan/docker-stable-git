@@ -1,4 +1,4 @@
-FROM docker:stable-git
+FROM docker:19.03.1-dind
 ADD mime.types /etc/mime.types
 ADD mime.types ~/mime.types
 RUN echo "ipv6" >> /etc/modules
