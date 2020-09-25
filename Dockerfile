@@ -24,3 +24,4 @@ RUN pip install s3cmd
 RUN pip install awscli
 RUN pip install requests
 RUN apk add jq
+RUN apk add openssh
