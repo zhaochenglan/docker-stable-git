@@ -10,7 +10,7 @@ RUN echo "http://dl-5.alpinelinux.org/alpine/edge/main" >> /etc/apk/repositories
 RUN apk add --update alpine-sdk
 RUN apk add --update bash autoconf automake lcms2-dev libpng-dev
 RUN apk add --update py-pip
-RUN apk add --update nodejs
+RUN apk add --update nodejs=10.16.3-r0
 RUN apk add --update npm
 RUN npm install yarn -g
 RUN wget -P /usr/bin/ http://docs-aliyun.cn-hangzhou.oss.aliyun-inc.com/assets/attach/50452/cn_zh/1524643963683/ossutil64
